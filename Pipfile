@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+requests = "*"
+flask = "*"
+opentelemetry-distro = "*"
+opentelemetry-instrumentation-requests = "==0.32b0"
+opentelemetry-instrumentation-fastapi = "==0.32b0"
+opentelemetry-exporter-jaeger = "*"
+opentelemetry-exporter-otlp-proto-grpc = "*"
+opentelemetry-api = "==1.12.0rc2"
+opentelemetry-sdk = "==1.12.0rc2"
+opentelemetry-exporter-jaeger-thrift = "*"
+opentelemetry-instrumentation-aws-lambda = "==0.32b0"
+opentelemetry-instrumentation-dbapi = "==0.32b0"
+opentelemetry-instrumentation-logging = "==0.32b0"
+opentelemetry-instrumentation-sqlite3 = "==0.32b0"
+opentelemetry-instrumentation-urllib = "==0.32b0"
+opentelemetry-instrumentation-wsgi = "==0.32b0"
+opentelemetry-instrumentation-asgi = "==0.32b0"
+opentelemetry-instrumentation-flask = "==0.32b0"
+opentelemetry-instrumentation-grpc = "==0.32b0"
+opentelemetry-instrumentation-jinja2 = "==0.32b0"
+opentelemetry-instrumentation-urllib3 = "==0.32b0"
+click = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
